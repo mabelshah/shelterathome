@@ -1,0 +1,234 @@
+/* Starter CSS */
+
+* {
+    box-sizing: border-box; /* because it’s 2019, jen simmons */
+    padding: 0;
+    margin: 0;
+}
+
+/* Generic styles */
+html {
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+}
+
+body, html {
+  height: 100%;
+}
+
+/* can't get my own image to work */
+.hero {
+  background: url("../img/hero.jpg");
+  height: 100%; 
+}
+
+.inner-hero > h1 {
+  text-align: center;
+  letter-spacing: 4px;
+  font-size: 4rem;
+  font-family: sarina, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding-top: 15rem;
+}
+
+/* logo is h1 on other pages */ 
+
+.logo {
+  text-align: center;
+  letter-spacing: .45rem;
+  font-size: 36px;
+  font-family: sarina, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding-top: 15rem;
+}
+
+.logo a {
+  text-decoration: none;
+  color: white;
+}
+
+.inner-hero > h1 a {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+    margin:0;
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    min-height: 100vh; /* 100 viewport height */
+    background-image: url("../img/hero.jpg");
+  }
+
+
+  /* The flex container holds the logo and navigation list */
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+.logo {
+  padding-top: 15px;
+  padding-bottom: 15px;
+      }
+      
+  /* get rid of bullets on list */
+.logo,
+.main-nav {
+  list-style: none;
+  }
+      
+/* get rid of underline on links */
+.logo a,
+.main-nav a {
+    text-decoration: none;
+    letter-spacing: 0.45rem;
+      }
+      
+.main-nav {
+    display: flex;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    justify-content: space-between;
+    border-top:whitesmoke;
+    border-bottom: whitesmoke;
+      }
+
+.main-nav a {
+    display: block;
+    padding: 1em;
+    color: white;
+      }
+img {
+    display: block; 
+    max-width: 100%; 
+}
+
+.cards {
+  display: grid;
+  grid-gap: 1em;
+  margin: 0 auto;
+  max-width: 1100px;
+  justify-content: center;
+}
+
+.card {
+    background-color: #FFF0F5;
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+    min-width: 250px;
+    max-width: 350px;
+    border-radius: 0.3rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+    top: 0;
+  }
+
+.cardarticle {
+  background: whitesmoke; 
+}
+
+.cardarticle > h1 {
+  letter-spacing: .8rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.music {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 3em;
+}
+
+.music-text {
+  padding-right: 5em;
+  padding-top: 10em;
+}
+
+article {
+    padding: 1rem;
+    }
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.headline.one, .headline.two {
+  letter-spacing: .8rem;
+  text-transform: uppercase;
+}
+    
+/* Tablet Styles */ 
+  @media only screen and (min-width: 35em) {
+    /* change flex direction to horizontal and space things out */
+    .main-nav {
+      align-items: flex-start;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-left: 2em;
+      padding-right: 2em;
+      padding-bottom: 15px;
+    }
+    /* .logo {
+      padding-top: 15px;
+      padding-bottom: 10px;
+    } */
+  }
+
+  @media (min-width: 800px) {
+    .cards {
+      background: rgba(255, 255, 255, 0.3);
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+    .image.one {
+      order: 2;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .cards {
+      /* background:#a0dee8; */
+      background: rgba(255, 255, 255, 0.3);
+      padding: 2rem;
+      border-radius: 0.5rem;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+
+    .image.two {
+      order: 1;
+    }
+
+    .text.two {
+      order: 3; 
+      padding-top: 6em;;
+    }
+
+    .headline.one {
+      order: 0; 
+      padding-top: 15em;
+      padding-left: 5em;
+    }
+
+    .headline.two {
+      order: 4; 
+      padding-top: 10em;
+      padding-left: 6em;
+    }
+
+    .text.one {
+      padding-top: 11em;;
+    }
+  }
