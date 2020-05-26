@@ -18,10 +18,12 @@
   
    <!--if using Google fonts link this to source or Adobe fonts -->
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=font1|font2|etc" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Sarina&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.typekit.net/lwl4hjv.css">
   
   <!--link to your css here -->
   <link rel="stylesheet" href="css/starter.css" type="text/css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css" type="text/css">
   </head>
   
   <!-- body -->
@@ -31,33 +33,32 @@
         <h1> <a href="index.html"> mabel shah </a></h1>
       </div>
         <ul class="main-nav">
-          <li><a href="starter.html"> Create </a></li>
+          <li><a href="starter.html"> Portfolio </a></li>
           <li><a href="outdoors.html">Outdoors</a></li>
           <li><a href="music.html">Music</a></li>
         </ul>
     </nav>
-    <section class="cards">  
-        <img class = "image one" src="img/art.png"> 
-        <article class = "headline one"> <h1> Graphics </h1> </article>
-        <article class = "text one">
-          <p> all this extra time has allowed me to further delve into my love for graphic design. 
-            I've started creating digital illustration when I have time here and there, and even started
-          an etsy shop over the past few weeks! </p>
-        </article>
-        <img class = "image two" src="img/pencil.jpeg">
-        <article class = "headline two"> <h1> Pencil </h1> </article>
-        <article class = "text two">
-          <p> I haven't done a drawing in pencil in quite sometime, but I put the time into drawing the 
-            infamous RGB over the past couple months. </p>
-          </article>
-    </section>
-
+    <section class="gallery">
+      <div class="item"> <a href="img/art.png" data-fancybox="images" data-caption="Kaitlyn Grad Card">
+      <img src="img/graphic-1.jpg" alt="Kaitlyn Graphic"/></a></div>
+      <div class="item"><a href="img/art2-full.png" data-fancybox="images" data-caption="Etsy Order, Father's Day">
+        <img src="img/art2.jpg" alt="" />
+      </a></div>
+      <div class="item"><a href="img/art3-full.png" data-fancybox="images" data-caption="Etsy Order, Grad Card">
+        <img src="img/art3.jpg" alt="" />
+      </a></div>
+      <div class="item"><a href="img/art-5-full.png" data-fancybox="images" data-caption="Roommates, Graphic">
+        <img src="img/art-4.jpg" alt="" />
+      </a></div>
+      <div class="item"><a href="img/art-4-full.png" data-fancybox="images" data-caption="Birthday Card">
+        <img src="img/art-5.jpg" alt="" />
+      </a></div>
+    </section> 
 <!-- all javascript at the bottom of the body -->
- <script src="js/scripts.js"></script>
-  </body>
+ <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+ <script src="js/jquery.fancybox.min.js"></script>
+ </body>
 
 </html>
- 
- 
 
  <!-- This is HTML markup for commenting -->
