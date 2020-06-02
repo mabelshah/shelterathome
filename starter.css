@@ -1,0 +1,463 @@
+/* Starter CSS */
+
+* {
+    box-sizing: border-box; /* because it’s 2019, jen simmons */
+    padding: 0;
+    margin: 0;
+}
+
+/* Generic styles */
+html {
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+}
+
+body, html {
+  height: 100%;
+}
+
+.hero {
+  background: url("../img/hero.jpg");
+  height: 100%; 
+}
+
+/* .inner-hero > h1 {
+  text-align: center;
+  letter-spacing: 4px;
+  font-size: 4rem;
+  font-family: sarina, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding-top: 15rem;
+} */
+
+.logo-main > h1 {
+  text-align: center;
+  letter-spacing: 4px;
+  font-size: 6rem;
+  font-family: sarina, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding-top: 15rem;
+}
+
+.logo-main > p {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  font-size: 1rem;
+}
+
+/* logo is h1 on other pages */ 
+
+.logo {
+  text-align: center;
+  letter-spacing: .45rem;
+  font-size: 36px;
+  font-family: sarina, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding-top: 15rem;
+}
+
+.logo a, .logo-main a {
+  text-decoration: none;
+  color: gray;
+}
+
+/* .inner-hero > h1 a {
+  text-decoration: none;
+  color: white;
+} */
+
+.logo-main a {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+    margin:0;
+    line-height: 1.6;
+    margin: 0;
+    min-height: 100vh; /* 100 viewport height */
+    background-image: url("../img/back.jpg");
+  }
+
+
+  /* The flex container holds the logo and navigation list */
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+.logo {
+  padding-top: 15px;
+  padding-bottom: 15px;
+      }
+      
+  /* get rid of bullets on list */
+.logo,
+.main-nav {
+  list-style: none;
+  }
+      
+/* get rid of underline on links */
+.logo a,
+.main-nav a, .hike a {
+    text-decoration: none;
+    letter-spacing: 0.45rem;
+      }
+      
+.main-nav {
+    display: flex;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    justify-content: space-between;
+    border-top:whitesmoke;
+    border-bottom: whitesmoke;
+      }
+
+.main-nav a {
+    display: block;
+    padding: 1em;
+    color: gray;
+      }
+img {
+    display: block; 
+    max-width: 100%; 
+}
+
+.outdoor-article {
+  margin-left: 2em;
+  margin-right: 2em;
+  font-family: 'Raleway', sans-serif;
+  color: gray;
+}
+
+.cards {
+  display: grid;
+  grid-gap: 1em;
+  margin: 0 auto;
+  max-width: 1100px;
+  justify-content: center;
+}
+
+.card {
+    background-color: #FFF0F5;
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+    min-width: 250px;
+    max-width: 350px;
+    border-radius: 0.3rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+    top: 0;
+  }
+
+.cardarticle {
+  background: whitesmoke; 
+}
+
+.cardarticle > h1 {
+  letter-spacing: .8rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.music {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+.music > iframe {
+  padding: 2em; 
+}
+
+article {
+    padding: 1rem;
+    }
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.headline.one, .headline.two {
+  letter-spacing: .8rem;
+  text-transform: uppercase;
+}
+
+/* simple gallery */
+
+.photo-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.gallery {
+  margin: 0 auto;
+  display: grid;
+  grid-gap: .5rem;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 1fr 1fr 1fr;
+  width: 50%;
+}
+
+.one {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.two {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.three {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.four {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+
+.five {
+  grid-column: 3;
+  grid-row: 3;
+}
+
+.item img {
+  width: 100%;
+  overflow: visible;  
+}
+
+.headerbox {
+  height: 100vh;
+  position: relative;
+  background-image: url(../img/hero.jpg);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.title {
+  height: 280px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  margin-top: -150px;
+}
+
+.title h1 {
+  color: yellowgreen;
+  font-size: 10vw;
+}
+
+.transparent {
+  height: 10em;
+  width: 100%;
+  position: absolute;
+  top: 75%;
+  margin-top: 5em;
+}
+
+.transparent h2 {
+  font-size: 12vw;
+  text-align: end;
+  padding-right: 30px;
+  color: maroon;
+}
+
+.content {
+  margin: 0 auto;
+  max-width: 90ch;
+  height: 100vh;
+  padding: 2rem;
+}
+
+.content article {
+  padding-top: 50px;
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 2;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.content article a {
+  text-decoration: none;
+  color: gray;
+}
+
+.second-image {
+  position: relative;
+  height: 600px;
+  background-image: url(../img/out4.jpeg);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.third-image {
+  position: relative;
+  height: 600px;
+  background-image: url(../img/out6.jpeg);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+    
+/* Tablet Styles */ 
+  @media only screen and (min-width: 35em) {
+    /* change flex direction to horizontal and space things out */
+    .main-nav {
+      align-items: flex-start;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-left: 2em;
+      padding-right: 2em;
+      padding-bottom: 15px;
+    }
+    /* .logo {
+      padding-top: 15px;
+      padding-bottom: 10px;
+    } */
+  }
+
+  @media (min-width: 800px) {
+    .cards {
+      background: rgba(255, 255, 255, 0.3);
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+    .image.one {
+      order: 2;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .cards {
+      /* background:#a0dee8; */
+      background: rgba(255, 255, 255, 0.3);
+      padding: 2rem;
+      border-radius: 0.5rem;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+
+    .image.two {
+      order: 1;
+    }
+
+    .text.two {
+      order: 3; 
+      padding-top: 6em;;
+    }
+
+    .headline.one {
+      order: 0; 
+      padding-top: 15em;
+      padding-left: 5em;
+    }
+
+    .headline.two {
+      order: 4; 
+      padding-top: 10em;
+      padding-left: 6em;
+    }
+
+    .text.one {
+      padding-top: 11em;
+    }
+
+    .outdoor-article {
+      margin-left: 10em;
+      margin-right: 10em;
+    }
+
+.headerbox {
+  height: 100vh;
+  position: relative;
+  background-image: url("../img/hero.jpg");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.title {
+  height: 280px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  margin-top: -150px;
+}
+
+.title h1 {
+  color: yellowgreen;
+  font-size: 10vw;
+}
+
+.transparent {
+  height: 10em;
+  width: 100%;
+  position: absolute;
+  top: 75%;
+  margin-top: 5em;
+}
+
+.transparent h2 {
+  font-size: 12vw;
+  text-align: end;
+  padding-right: 30px;
+  color: maroon;
+}
+
+.content {
+  margin: 0 auto;
+  max-width: 90ch;
+  height: 100vh;
+  padding: 2rem;
+}
+
+.content article {
+  padding-top: 50px;
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 1.3;
+}
+
+.second-image {
+  position: relative;
+  height: 600px;
+  background-image: url(../img/out5.jpeg);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+  }
