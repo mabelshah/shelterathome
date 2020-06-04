@@ -171,7 +171,7 @@ img {
 
 .music {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   padding-left: 3em;
   padding-right: 3em;
 }
@@ -342,6 +342,17 @@ img {
       padding-top: 15px;
       padding-bottom: 10px;
     } */
+    .music {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding-left: 3em;
+      padding-right: 3em;
+    }
+    
+    .music > iframe {
+      padding: 2em; 
+    }
+    
   }
 
   @media (min-width: 800px) {
@@ -353,6 +364,18 @@ img {
     .image.one {
       order: 2;
     }
+
+    .music {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      padding-left: 3em;
+      padding-right: 3em;
+    }
+    
+    .music > iframe {
+      padding: 2em; 
+    }
+    
   }
   
   @media (min-width: 1200px) {
@@ -394,6 +417,18 @@ img {
       margin-left: 10em;
       margin-right: 10em;
     }
+
+    .music {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      padding-left: 3em;
+      padding-right: 3em;
+    }
+    
+    .music > iframe {
+      padding: 2em; 
+    }
+    
 
 .headerbox {
   height: 100vh;
