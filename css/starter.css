@@ -22,16 +22,6 @@ body, html {
   height: 100%; 
 }
 
-/* .inner-hero > h1 {
-  text-align: center;
-  letter-spacing: 4px;
-  font-size: 4rem;
-  font-family: sarina, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  padding-top: 15rem;
-} */
-
 .logo-main > h1 {
   text-align: center;
   letter-spacing: 4px;
@@ -123,9 +113,10 @@ body {
 
 .main-nav a {
     display: block;
-    padding: 1em;
     color: gray;
+    margin-left: 1em;
       }
+
 img {
     display: block; 
     max-width: 100%; 
