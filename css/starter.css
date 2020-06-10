@@ -55,11 +55,6 @@ body, html {
   color: gray;
 }
 
-/* .inner-hero > h1 a {
-  text-decoration: none;
-  color: white;
-} */
-
 .logo-main a {
   text-decoration: none;
   color: white;
@@ -109,6 +104,7 @@ body {
     justify-content: space-between;
     border-top:whitesmoke;
     border-bottom: whitesmoke;
+    padding-bottom: 2em;
       }
 
 .main-nav a {
@@ -198,8 +194,10 @@ img {
   margin: 0 auto;
   display: grid;
   grid-gap: .5rem;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: 1fr 1fr 1fr;
+  /* grid-template-columns: auto auto auto;
+  grid-template-rows: 1fr 1fr 1fr; */
+  grid-template-columns: auto;
+  grid-template-rows: auto;
   width: 50%;
 }
 
@@ -366,6 +364,11 @@ img {
     .music > iframe {
       padding: 2em; 
     }
+
+    .gallery {
+      grid-template-columns: auto auto auto;
+      grid-template-rows: 1fr 1fr 1fr;
+    }
     
   }
   
@@ -420,6 +423,11 @@ img {
       padding: 2em; 
     }
     
+    .gallery {
+      grid-template-columns: auto auto auto;
+      grid-template-rows: 1fr 1fr 1fr;
+    }
+  }
 
 .headerbox {
   height: 100vh;
